@@ -1,0 +1,194 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+<body>
+	<div class="login-form">
+		<h2>Login</h2>
+		<form>
+			<label for="email">Email:</label>
+			<input type="email" id="email" placeholder="Enter your email">
+			
+			<label for="password">Password:</label>
+			<input type="password" id="password" placeholder="Enter your password">
+			
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.login-form {
+			width: 300px;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.login-form input[type="email"], .login-form input[type="password"] {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.login-form input[type="submit"] {
+			width: 100%;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		
+		.login-form input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		
+		.guess-game {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="login-form">
+		<h2>Login</h2>
+		<form id="login-form">
+			<label for="email">Email:</label>
+			<input type="email" id="email" placeholder="Enter your email">
+			
+			<label for="password">Password:</label>
+			<input type="password" id="password" placeholder="Enter your password">
+			
+			<input type="submit" value="Login">
+		</form>
+		
+		<div class="guess-game">
+			<h2>Guess Game</h2>
+			<input type="number" id="numbergame" placeholder="Guess a number">
+			<button onclick="guessgame()">Guess</button>
+			<p id="msg1"></p>
+		</div>
+	</div>
+	
+	<script>
+		document.getElementById("login-form").addEventListener("submit", function(event) {
+			event.preventDefault();
+			var email = document.getElementById("email").value;
+			var password = document.getElementById("password").value;
+			// You can add your login logic here
+			// For now, I'm just going to display the guess game
+			document.querySelector(".guess-game").style.display = "block";
+			document.querySelector(".login-form form").style.display = "none";
+		});
+		
+		function guessgame() {
+			let random_number = 10;
+			let numbergameInput = document.getElementById('numbergame');
+			let userGuess = parseInt(numbergameInput.value); // Get the user-input value and convert it to a number
+			let msg1= document.getElementById("msg1");
+			msg1.style.color ="red";
+			
+			if (random_number === userGuess) {
+				msg1.textContent="won";
+			} else {
+				msg1.textContent="lost";
+			}
+		}
+	</script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+	<div class="login-form">
+		<h2>Login</h2>
+		<form id="login-form">
+			<label for="email">Email:</label>
+			<input type="email" id="email" placeholder="Enter your email">
+			
+			<label for="password">Password:</label>
+			<input type="password" id="password" placeholder="Enter your password">
+			
+			<p id="msg"></p>
+			<input type="submit" value="Login">
+		</form>
+		
+		<div class="guess-game">
+			<h2>Guess Game</h2>
+			<input type="number" id="numbergame" placeholder="Guess a number">
+			<button onclick="guessgame()">Guess</button>
+			<p id="msg1"></p>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <input type="email" placeholder="email id" id="validation">
+    <input type="password" placeholder="Password" id="password">
+    <button onclick="validation()">Submit</button>
+    <p id="msg"></p>
+
+
+    <input type="number" placeholder="enter numner from 1 to 100" id="numbergame">
+    <button onclick="guessgame()">Submit</button>
+    <p id="msg1"></p>
+</body>
+<script src="script.js"></script>
+</html> -->
